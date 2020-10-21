@@ -158,33 +158,7 @@ Restart squid:
     systemctl restart squid
   ```
 
-## How do I know its working!
 
-3. Now that you have squid running as well, you can test it out by trying to download/access a file from the Internet(through the proxy) and see the magic happens! You'll be able to download/access the file if its alright,
-
-      If you try and download something not malicious you should see something like this in the logs:
-![fileoklog](img/fileoklog.jpg)
-
-
-
-   To test properly using malicious files , visit the [Eicar Test File Site](https://www.eicar.org/?page_id=3950), and try to download a malicious file.
-
-   For example, open the following link
-
-   www.eicar.org/download/eicar_com.zip,
-
-   There will be terminal logs such as:
-   ![filenotok](img/filenotok.jpg)
-
-   And you are gonna see something like this in the browser:
-   ![error_page](img/errorpage.jpg)
-
-   And the details of the malicious file is shown by clicking on "details" button:
-   ![error_page](img/details.jpg)
-
-Oh, and do not forget to setup your Browser or Machine 's  proxy settings according to the squid.
-
-If you are still not getting any logs and the file is downloaded whatsoever, please check your proxy(squid) setup.
 
 ## Things to keep in mind
 
